@@ -9,7 +9,7 @@ function convertFile {
 
 if [ -d "$1" ]; then
     for file in "$1"/*.{jpeg,jpg,JPG}; do
-        convertFile $file;
+        convertFile "$file";
     done
 else
     convertFile $1
