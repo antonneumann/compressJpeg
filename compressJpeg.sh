@@ -3,7 +3,7 @@
 function convertFile {
     if [ -f "$1" ]; then
         echo "Compressing $1";
-        convert "$1" -quality 85 -strip -interlace Plane -gaussian-blur 0.05 "$1"
+        convert "$1" -quality 85 -strip -interlace Plane "$1"
     fi
 }
 
